@@ -1,0 +1,15 @@
+frequency/speed  (%)   (ADC0_PIN)   0-10V (C)
+
+current input is the heat DP (Q)  (ADC1_PIN) 4-20mA (M)
+
+voltage input is power (W)  (ADC2_PIN) 0-10V (D)
+
+not using channel 3 (ADC3_PIN) 4-20mA
+
+fan flow meter algorighm 4
+
+using M for coefficients m_num a1-a8
+
+using D for coefficients d_num = b1-b8
+
+Using C for coefficient c_num[2]=kWRange

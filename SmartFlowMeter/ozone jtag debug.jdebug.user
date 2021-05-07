@@ -1,0 +1,40 @@
+
+
+
+Breakpoint=4085198282: 328: 0, State=BP_STATE_DISABLED
+Breakpoint=4085198282: 373: 0, State=BP_STATE_DISABLED
+GraphedExpression="current_counter_period_fall", DisplayFormat=DISPLAY_FORMAT_DEC
+GraphedExpression="overflow_counter", DisplayFormat=DISPLAY_FORMAT_DEC
+GraphedExpression="overflow_counter_fall", DisplayFormat=DISPLAY_FORMAT_DEC
+GraphedExpression="flag_counter", DisplayFormat=DISPLAY_FORMAT_DEC
+GraphedExpression="adc_value_calibrated[3]"
+GraphedExpression="current_counter_fall_new", DisplayFormat=DISPLAY_FORMAT_DEC
+GraphedExpression="current_counter_fall_old", DisplayFormat=DISPLAY_FORMAT_DEC
+OpenDocument="ozone jtag debug.jdebug", FilePath="Z:/Customers/Dr Li Song OU smart flow meter/arduino/SmartFlowMeter/ozone jtag debug.jdebug", Line=0
+OpenDocument="main.cpp", FilePath="C:/Users/Lawrence/AppData/Local/Arduino15/packages/adafruit/hardware/nrf52/0.16.0/cores/nRF5/main.cpp", Line=78
+OpenDocument="SmartFlowMeter.ino", FilePath="//MTNAS/MT-Server/Customers/Dr Li Song OU smart flow meter/arduino/SmartFlowMeter/SmartFlowMeter.ino", Line=2135
+OpenDocument="gcc_startup_nrf52.S", FilePath="C:/Users/Lawrence/AppData/Local/Arduino15/packages/adafruit/hardware/nrf52/0.16.0/cores/nRF5/linker/gcc_startup_nrf52.S", Line=227
+OpenDocument="tasks.c", FilePath="C:/Users/Lawrence/AppData/Local/Arduino15/packages/adafruit/hardware/nrf52/0.16.0/cores/nRF5/freertos/Source/tasks.c", Line=2564
+OpenDocument="SoftwareTimer.cpp", FilePath="C:/Users/Lawrence/AppData/Local/Arduino15/packages/adafruit/hardware/nrf52/0.16.0/cores/nRF5/utility/SoftwareTimer.cpp", Line=69
+OpenDocument="Print.h", FilePath="C:/Users/Lawrence/AppData/Local/Arduino15/packages/adafruit/hardware/nrf52/0.16.0/cores/nRF5/Print.h", Line=41
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Source Files", DockArea=LEFT, x=0, y=1, w=347, h=182, FilterBarShown=1, ToolBarShown=0
+OpenWindow="Disassembly", DockArea=RIGHT, x=0, y=1, w=487, h=163, FilterBarShown=0, ToolBarShown=0, ExecCountersShown=0, InstEncodingsShown=0
+OpenWindow="Source", x=0, y=0, w=0, h=0, FilterBarShown=0, ToolBarShown=0, ExecCountersShown=0
+OpenWindow="Memory 1", DockArea=BOTTOM, x=3, y=0, w=521, h=221, FilterBarShown=0, ToolBarShown=0, EditorAddress=0x0
+OpenWindow="Global Data", DockArea=RIGHT, x=0, y=0, w=487, h=417, FilterBarShown=1, ToolBarShown=0
+OpenWindow="Functions", DockArea=LEFT, x=0, y=2, w=347, h=144, FilterBarShown=1, ToolBarShown=0
+OpenWindow="Call Graph", DockArea=LEFT, x=0, y=0, w=347, h=253, FilterBarShown=1, ToolBarShown=0
+OpenWindow="Terminal", DockArea=BOTTOM, x=1, y=0, w=71, h=221, FilterBarShown=0, ToolBarShown=0
+OpenWindow="Data Sampling", DockArea=BOTTOM, x=0, y=0, w=907, h=221, FilterBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
+OpenWindow="Console", DockArea=BOTTOM, x=2, y=0, w=176, h=221, FilterBarShown=0, ToolBarShown=0
+TableHeader="Global Data", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Location";"Size";"Type";"Access";"Scope"], ColWidths=[181;110;65;44;48;58;254]
+TableHeader="Functions", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Address";"Size";"#Insts";"Class";"Source"], ColWidths=[480;77;56;57;122;194]
+TableHeader="Source Files", SortCol="Size", SortOrder="DESCENDING", VisibleCols=["File";"Status";"Size";"#Insts";"Path"], ColWidths=[27;63;32;56;1088]
+TableHeader="Call Graph", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Stack Total";"Stack Local";"Code Total";"Code Local";"Depth";"Called From"], ColWidths=[480;77;78;76;77;141;81]
+TableHeader="Power Sampling", SortCol="Index", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="Task List", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Name";"Run Count";"Priority";"Status";"Timeout";"Stack Info (Free / Size)";"ID";"Mutex Count";"Notified Value";"Notify State";"Name";"Run Count";"Priority";"Status";"Timeout";"Stack Info (Free / Size)";"ID";"Mutex Count";"Notified Value";"Notify State";"Name";"Run Count";"Priority";"Status";"Timeout";"Stack Info (Free / Size)";"ID";"Mutex Count";"Notified Value";"Notify State"], ColWidths=[111;110;110;110;110;110;110;110;110;110;100;100;100;100;100;100;100;100;100;100;100;100;100;100;100;100;100;100;100;100]
+TableHeader="RegisterSelectionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Auto";"Name";"Address";"Description"], ColWidths=[27;27;27;31]
+TableHeader="Data Sampling Table", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";" current_counter_period_fall";" overflow_counter";" overflow_counter_fall";" flag_counter";" adc_value_calibrated[3]";" current_counter_fall_new";" current_counter_fall_old"], ColWidths=[100;100;100;100;100;100;100;100;100]
+TableHeader="Data Sampling Setup", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[176;105;84;41;84;84;78;91;164]
+WatchedExpression="overflow_counter"

@@ -1,8 +1,6 @@
 # Introduction
 The goal of this manual is to guide the user throught the steps necessary to take the application from this repository and to download it onto your android device. This application is designed to connect to a BlueFruit NRF52 running the application which is detailed in the readMe below as well.
 
-# Android
-
 ## Step 1: Downloading Android Studio
 In order to download Android Studio you will first need to navigate to https://developer.android.com/studio and click the green button labeled "Download Android Studio".  If your device does not run on Windows-64 bit then you will need to select link below it labeled "Download Options" and select the download link that matches your system.  You will then need to launch the .exe file if you are using Windows, or launch the DMG file if you are using a Mac.  Follow the setup wizard and download whatever it recommends.  If you are having difficulties with this step consult the following link: https://developer.android.com/studio/install.  
 
@@ -18,5 +16,73 @@ Follow this guide for setting up your phone to be able to run your Android appli
 ## Potential Issues
 * If you're having difficulty getting the code to compile and run, it is likely due to not having the proper SDK tools installed. Make sure you have the proper one installed for whichever device you wish to develop on.
 * If your device is too old (8+ years) it may not be able to run the application.
+
+# Arduino
+Libraries used
+
+https://github.com/cmaglie/FlashStorage
+
+https://github.com/neu-rah/ArduinoMenu             ArduinoMenu library 4.18.2
+
+https://www.arduino.cc/en/Reference/SD             SD 1.2.4 
+
+https://github.com/adafruit/Adafruit_SSD1306
+
+https://github.com/adafruit/Adafruit-GFX-Library   Adafruit GFX Library 1.0.0
+
+https://github.com/adafruit/Adafruit_FeatherOLED   Adafruit Feather OLED 1.0.0
+
+https://github.com/michd/Arduino-MCP492X
+
+https://playground.arduino.cc/Code/Keypad/
+
+https://github.com/stblassitude/Adafruit_SSD1306_Wemos_OLED
+
+https://github.com/adafruit/Adafruit_nRF52_Arduino Adaruit Bluefruit
+
+https://github.com/Wiznet/WIZ_Ethernet_Library Wiznet ethernet library
+
+Board Manager: Adafruit nrf52 Ver 0.16.0
+
+Adafruit Bluefruit Feather nRF52832 
+
+The circuit:
+analog sensors on analog ins 0, 1, 2, 3
+SD card attached to SPI bus as follows:
+	
+	** MOSI - pin 11
+	
+	** MISO - pin 12
+	
+	** CLK - pin 13
+	
+	** CS - pin 4 (for MKRZero SD: SDCARD_SS_PIN)
+	
+	CS - pin 28 MCP4922
+	
+	** OLED_reset pin 7
+	
+	**
+	
+	**
+
+Author: Lawrence Kincheloe
+
+add "{build.variant.path}/libarm_cortexM4lf_math.a" to platforms.txt in recipe.c.combine.pattern, before "{build.path/archive_file}"
+  
+add to boards.txt the below two lines, and replace #feather52832.build.extra_flags=-DNRF52832_XXAA -DNRF52 -DARDUINO_NRF52_FEATHER
+feather52832.build.extra_flags=-DNRF52832_XXAA -DNRF52 -DARDUINO_NRF52_FEATHER -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 
+feather52832.compiler.arm.cmsis.ldflags="-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
+
+
+edit operation:
+
+1 - first * -> enter field navigation use +/- to select character position
+
+2 - second * -> enter character edit use +/- to select character value
+
+3 - third * -> return to field navigation (1)
+
+4 - fourth * without changing position -> exit edit mode
 
 

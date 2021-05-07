@@ -1,0 +1,186 @@
+﻿#Unit 3-7 Config
+#Vout Upper Limit 0-10v
+U0 :  10.000000
+#Vout Lower Limit 0-10v
+U1 :  0.0000000
+#Iout Upper Limit
+U2 :  20.0000000
+#Iout Lower Limit
+U3 :  4.0000000
+#   U4 C coefficient number
+U4 : 4
+#U5 M coefficient number
+U5 : 4
+# U6 D coefficient number
+U6 : 4
+#U7 Config File Version Number
+U7 : 0.0035
+#U8 Sample rate in mS
+U8 : 1000.0
+#Which algorithm to run (0=calibrate  1=fresh_air_fan 2=valve_flow_rate 3=pump_fan_flow_rate 4=fan flow)
+U9 : 4
+#calibration coeff, ADC0_PIN 
+U10: 0.00083
+#calibration coeff, ADC1_PIN
+U11: 0.00164
+#calibration coeff, ADC2_PIN
+U12: 0.00083
+#U13 calibration coeff, ADC3_PIN
+U13: 0.00164
+#U14 calibration coeff, 0-10V out
+U14: 3924.22526
+#U15 calibration coeff, 4-20mA out
+U15: 1954.53273
+#U16 calibartion coeff offset, ADC0_PIN
+U16: -0.00632
+#U17 calibartion coeff offset, ADC1_PIN
+U17: -0.01266
+#U18 calibartion coeff offset, ADC2_PIN
+U18: -0.00566
+#U19 calibartion coeff offset, ADC3_PIN
+U19: -0.01319
+#U20 calibartion coeff offset, 0-10V out
+U20: -11.0164
+#U21 calibartion coeff offset, 4-20mA out
+U21: 487.9695
+#U22 ADC0_PIN 0: disable, 1: 0-10V in, 2: 4-20mA in, 3:frequency, 4: Pulse in
+U22: 1
+#U23 ADC1_PIN 0: disable, 1: 0-10V in, 2: 4-20mA in, 3:frequency, 4: Pulse in
+U23:2
+#U24 ADC2_PIN 0: disable, 1: 0-10V in, 2: 4-20mA in, 3:frequency, 4: Pulse in
+U24:1
+#U25 ADC3_PIN 0: disable, 1: 0-10V in, 2: 4-20mA in, 3:frequency, 4: Pulse in
+U25:0
+#U26 ADC Sample rate timer in miliseconds
+U26:10
+#U27 ADC_Settling_Percent
+U27:0.06
+#U28 DAC0_PIN 0:Not used, 1:C Output, 2:M Output, 3:D Output, 4:R Output
+U28:3
+#U29 DAC1_PIN 0:Not used, 1:C Output, 2:M Output, 3:D Output, 4:R Output
+U29:3
+#U30 discontinuity  R, 0:Not used, 1: applied to ADC0_PIN, 2: applied to ADC1_PIN, 3: applied to ADC2_PIN, 4: applied to ADC3_PIN
+U30:0
+#U31 discontinuity  C, 0:Not used, 1: applied to ADC0_PIN, 2: applied to ADC1_PIN, 3: applied to ADC2_PIN, 4: applied to ADC3_PIN
+U31:1
+#U32 discontinuity  M, 0:Not used, 1: applied to ADC0_PIN, 2: applied to ADC1_PIN, 3: applied to ADC2_PIN, 4: applied to ADC3_PIN
+U32:2
+#U33 discontinuity  D, 0:Not used, 1: applied to ADC0_PIN, 2: applied to ADC1_PIN, 3: applied to ADC2_PIN, 4: applied to ADC3_PIN
+U33:3
+#U34 discontinuity value R, 0: Not used, anything else, Coeff list lower applied to input < discontinuity value and doeff list upper applied to input >= discontinuity value
+U34:0
+#U35 discontinuity value C, 0: Not used, anything else, Coeff list lower applied to input < discontinuity value and doeff list upper applied to input >= discontinuity value
+U35:0
+#U36 discontinuity value M, 0: Not used, anything else, Coeff list lower applied to input < discontinuity value and doeff list upper applied to input >= discontinuity value
+U36:0
+#U37 discontinuity value D, 0: Not used, anything else, Coeff list lower applied to input < discontinuity value and doeff list upper applied to input >= discontinuity value
+U37:0.1
+#U38 R normalized Signal conversion to physical values offset, only used for display and recording
+U38:-0.41793477535247802734
+#U39 C normalized Signal conversion to physical values offset, only used for display
+U39:0
+#U40 M normalized Signal conversion to physical values offset, only used for display
+U40:0
+#U41 D normalized Signal conversion to physical values offset, only used for display
+U41:0
+#U42 DAC0 normalized calibartion coeff offset, 0-10V out, only used for display and recording
+U42:0
+#U43 DAC1 normalized calibartion coeff offset, 4-20mA out, only used for display and recording
+U43: 0
+# U44 R normalized Signal conversion to physical values multiplier, only used for display
+U44: 0.00118930614553391933
+# U45 C normalized Signal conversion to physical values multiplier, only used for display
+U45: 10
+# U46 M normalized Signal conversion to physical values multiplier, only used for display
+U46: 1
+# U47 D normalized Signal conversion to physical values multiplier, only used for display
+U47:100.0
+#U48 DAC0 normalized calibartion coeff 0-10V out,  only used for display
+U48:32000
+#U49 DAC1 normalized calibration coeff 4-20mA, only used for display
+U49:32000
+#WHpP watt hour per pulse
+U50:100
+#Qmax normalization factor
+U51:25000
+#DPSensor range
+U52:1245
+#Frequency Range
+U53:1.0
+#U54 ADC0 input label/units
+U54:%
+#U55 ADC1 input label/units
+U55:Pa
+#U56 ADC2 input label/units
+U56:W
+#U57 ADC3 input label/units
+U57:V
+#U58 DAC0 output label/units
+U58:m3/h
+#U59 DAC1 output label/units
+U59:m3/h
+#U60 // R  labels
+U60:+++
+#U61 //  C  labels
+U61:Q
+#U62 //  M labels
+U62:%
+#U63 //  D labels
+U63:W
+#U64 //  Vout labels
+U64:V
+#U65 // Iout labels
+U65:mA
+#U66 //impulse / kWh
+U66:25
+#U67 ADC0 display or calculation conversion multiplier
+U67:100
+#U68 ADC1 display or calculation conversion multiplier
+U68: 1245
+#U69 ADC2 display or calculation conversion multiplier
+U69: 25000
+#U70 ADC3 display or calculation conversion multiplier
+U70:10
+#U71 ADC0 display or calculation conversion offset
+U71:0
+#U72 ADC1 display or calculation conversion offset
+U72:0
+#U73 ADC2 display or calculation conversion offset
+U73:0
+#U74 ADC3 display or calculation conversion offset
+U74:0
+
+#C coefficients for fan motor efficiency
+C0 :  -0.2871
+C1 :  4.4944
+C2  : -5.3854
+C3  : 2.1915
+C4  : 0
+C5  : 0
+C6 : 0
+C7 : 0
+
+#D
+D0 : 0
+D1 :  0
+D2 : 0
+D3 : 0
+D4 : 0
+D5 : 0
+D6 : 0.0000000e00
+D7 : 0.0000000e00
+
+
+M0 :  -1.7782e+00
+M1 :  +7.9187E+01
+M2 : -8.4281E+02
+M3 : +2.9522E+03
+M4 : 0.757
+M5 : -0.719
+M6 : -1.7791
+M7 : 3.6845
+#R coefficients
+R0 :  0.0000000e00
+R1 :  0.0000000e00
+R2  : 0.0000000e00
+R3  : 0.0000000e00
